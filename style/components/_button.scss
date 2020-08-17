@@ -1,0 +1,28 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  background-color: $primary;
+  color: $white;
+  padding: 0.25em 0.85em;
+  min-width: 10ch;
+  min-height: 30px;
+  transition: all 250ms ease;
+  &:hover {
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  }
+  &:focus {
+    outline-width: 1px;
+  }
+  &--big {
+    font-size: 1.25rem;
+  }
+  &--small {
+    font-size: 0.75rem;
+    padding: 0.2em 0.85em;
+  }
+  &--dark {
+    background-color: $secondary-dark;
+  }
+}

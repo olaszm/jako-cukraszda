@@ -1,0 +1,123 @@
+@import "./_variables.scss";
+
+header {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: $primary;
+  }
+}
+
+nav,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  height: 75px;
+  padding-bottom: 5px;
+}
+
+.nav {
+  li {
+    margin: 0 0.8rem;
+    position: relative;
+    overflow: hidden;
+    a {
+      color: currentColor;
+      text-decoration: none;
+    }
+    &:hover::after {
+      content: "";
+      transform: translateX(0%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      transform: translateX(-100%);
+      background-color: $primary;
+      transition: all 300ms ease;
+    }
+  }
+  display: flex;
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.hambi {
+  display: none;
+  cursor: pointer;
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: $white;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 300ms ease-in-out;
+  .dropdown__inner {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    .dropdown__nav {
+      display: grid;
+      place-items: center;
+      height: 80%;
+      li {
+        margin: 1em 0rem;
+        position: relative;
+        overflow: hidden;
+        font-size: 1.325rem;
+        text-transform: uppercase;
+        a {
+          color: currentColor;
+          text-decoration: none;
+        }
+        &:hover::after {
+          content: "";
+          transform: translateX(0%);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 2px;
+          transform: translateX(-100%);
+          background-color: $primary;
+          transition: all 200ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-active {
+  transform: translate(0);
+  opacity: 1;
+  scroll-behavior: none;
+  height: 300px;
+  pointer-events: all;
+}

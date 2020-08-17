@@ -1,0 +1,27 @@
+@import "components/navbar";
+@import "components/reset";
+@import "components/modal";
+@import "components/landing";
+@import "components/button";
+@import "components/footer";
+@import "components/products";
+@import "components/about";
+@import "components/variables";
+
+@import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: $fontsize;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+  @media (max-width: $mobile) {
+    width: 90%;
+  }
+}
