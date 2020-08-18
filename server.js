@@ -9,6 +9,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 //   res.sendFile(__dirname + `/public/index.html`);
 // });
 
+const PORT = 3000;
 const galleryRoutes = [
   { name: "wedding-cake" },
   { name: "bday-cake" },
@@ -47,6 +48,6 @@ app.get("/gallery/:name", (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+app.listen(process.env.port || PORT, () => {
   console.log("App is Listening");
 });
