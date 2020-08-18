@@ -48,6 +48,6 @@ app.get("/gallery/:name", (req, res) => {
   }
 });
 
-app.listen(process.env.port || PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log("App is Listening");
 });
