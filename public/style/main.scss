@@ -6,6 +6,7 @@
 @import "components/footer";
 @import "components/products";
 @import "components/about";
+@import "components/form";
 @import "components/variables";
 
 @import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
@@ -19,9 +20,43 @@ body {
 }
 
 .wrapper {
-  width: 85%;
+  width: 65%;
   margin: 0 auto;
   @media (max-width: $mobile) {
     width: 90%;
+  }
+}
+
+._main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.error {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  h1 {
+    font-family: "Allura", sans-serif;
+    font-size: 10rem;
+    color: $primary;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+  h3 {
+    margin: 0;
+    color: $primary;
+    padding: 0;
+    font-size: 3rem;
+  }
+  a {
+    button {
+      margin: 2rem 0;
+    }
+    color: currentColor;
+    text-decoration: none;
   }
 }

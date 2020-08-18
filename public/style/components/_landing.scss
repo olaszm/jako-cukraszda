@@ -76,11 +76,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-shrink: 0;
       .services__card {
         // background-color: green;
+        // margin: 0 1.5rem;
         height: 100%;
+        min-width: 175px;
+        margin-right: 1.5rem;
         max-width: 300px;
+        &:last-child {
+          margin-right: 0;
+        }
         .services__card__content {
           width: 100%;
           button {
@@ -102,6 +108,7 @@
         }
       }
       @media (max-width: $tablet) {
+        flex-direction: column;
         justify-content: center;
         gap: 1rem;
       }

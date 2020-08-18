@@ -1,7 +1,7 @@
-.about {
+.section {
   height: 100%;
-  .about__inner {
-    .about__title {
+  .section__inner {
+    .section__title {
       font-family: "Allura", sans-serif;
       color: $primary;
       font-size: 1.8rem;
@@ -19,34 +19,39 @@
         background-color: $primary;
       }
     }
-    .about__content {
-      margin: 5rem 0;
+    .section__content {
+      margin: 3rem 0;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
-      .about__content__img {
-        max-width: 550px;
+      .section__content__img {
+        max-width: 600px;
         min-width: 300px;
         margin-right: 3rem;
+
         img {
           height: auto;
           width: 100%;
         }
       }
-      .about__content__text {
+      .section__content__text {
         p {
           margin: 2rem 0;
           max-width: 500px;
           min-width: 255px;
+          &:first-child {
+            margin-top: 0;
+          }
         }
       }
 
       @media (max-width: $desktop) {
         margin: 3rem 0;
         flex-direction: column;
-        .about__content__img {
+        .section__content__img {
           min-width: 300px;
           margin: auto;
+          margin-bottom: 2.5rem;
         }
       }
     }
