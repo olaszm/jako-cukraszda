@@ -1,0 +1,34 @@
+{
+  "weddingCakes": [
+    {
+      "name": "Fank",
+      "src": "https://images.unsplash.com/photo-1530019163123-f33edadb3833?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": ["malna", "eper", "barack"]
+    },
+    {
+      "name": "IzeBize",
+      "src": "https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": ["mint", "lime", "lorem"]
+    },
+    {
+      "name": "LoremIpsum",
+      "src": "https://images.unsplash.com/photo-1573050646191-6b8a69b506f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": ["loremMemem", "ipsumpusom", "IpsLorem"]
+    },
+    {
+      "name": "Huhehuehue",
+      "src": "https://images.unsplash.com/photo-1592343516127-aa13cbdc5172?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+    },
+    {
+      "name": "Huhehuehue",
+      "src": "https://images.unsplash.com/photo-1521624738948-5250b8a7c220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+    },
+    {
+      "name": "Huhehuehue",
+      "src": "https://images.unsplash.com/photo-1556973959-bde9642a2c6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+    }
+  ]
+}

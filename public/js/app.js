@@ -1,5 +1,7 @@
 const dropDownEl = document.querySelector(".dropdown");
 const hamburgerElement = document.querySelector(".hambi");
+const sectionEL = document.querySelector(".gallery");
+const sectionTitle = document.querySelector(".section__title > h1");
 
 // DROPDOWN ------------------------------
 let isMenuOpen = false;
@@ -15,46 +17,74 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// ROUTER ------------------------------
+window.addEventListener("DOMContentLoaded", async () => {
+  const { pathname } = window.location;
+  console.log(pathname);
+  if (pathname.includes("gallery")) {
+    const res = await fetch("/api/weddingCakes");
+    const data = await res.json();
 
-// window.addEventListener("DOMContentLoaded", () => {
-//   console.log("DOM loaded");
+    let rowItems = [];
+    data.forEach((d) => {
+      sectionTitle.textContent = `Gallery`;
 
-//   const router = document.querySelectorAll("[data-route]");
+      const div = createGalleryCard();
+      const img = createGalleryImage(d);
+      const contentDiv = createGallertContentEl();
+      const cardTitle = createGalleryCardTitle(d.name);
+      const cardTags = createGalleryCardTags(d.flavours);
+      contentDiv.append(cardTitle);
+      contentDiv.append(cardTags);
 
-//   router.forEach((r) => {
-//     r.addEventListener("click", (e) => {
-//       const routeName = e.target.dataset.route;
-//       window.history.pushState({}, routeName, `/${routeName}`);
-//     });
-//   });
+      div.append(img);
+      div.append(contentDiv);
+      rowItems.push(div);
 
-//   class Router {
-//     constructor(name, routes) {
-//       this.name = name;
-//       this.routes = routes;
-//     }
-//   }
+      if (rowItems.length >= 3) {
+        const row = createGalleryRow(rowItems);
+        sectionEL.append(row);
+        rowItems = [];
+      }
+    });
+  }
+});
 
-//   const myFirstRouter = new Router("firstRouter", [
-//     { path: "/", name: "home" },
-//     { path: "/about", name: "about" },
-//     { path: "/product", name: "product" },
-//     { path: "/order", name: "order" },
-//     { path: "/contact", name: "contact" },
-//   ]);
+const createGalleryRow = (items) => {
+  const div = document.createElement("div");
+  div.classList.add("gallery__card__row");
+  items.forEach((item) => {
+    div.append(item);
+  });
+  return div;
+};
 
-//   const currentPath = window.location.pathname;
-//   if (currentPath == "/") {
-//     console.log("Home page");
-//   } else {
-//     const route = myFirstRouter.routes.filter((r) => {
-//       return r.path == currentPath;
-//     })[0];
-//     if (route) {
-//       appEl.textContent = "your are on " + route.name;
-//     } else {
-//       appEl.textContent = `404 No Route`;
-//     }
-//   }
-// });
+const createGalleryCardTitle = (name) => {
+  const title = document.createElement("h3");
+  title.textContent = name;
+  return title;
+};
+
+const createGalleryCardTags = (tags) => {
+  let tag = tags.join(" ");
+  return tag;
+};
+
+const createGallertContentEl = () => {
+  const div = document.createElement("div");
+  div.classList.add("gallery__card__content");
+  return div;
+};
+
+const createGalleryCard = () => {
+  const div = document.createElement("div");
+  div.classList.add("gallery__card");
+  return div;
+};
+
+const createGalleryImage = (item) => {
+  const img = document.createElement("img");
+  img.src = item.src;
+  img.alt = item.name;
+  img.classList.add("gallery__img");
+  return img;
+};
