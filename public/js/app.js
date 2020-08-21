@@ -94,3 +94,21 @@ const createGalleryImage = (item) => {
   img.classList.add("gallery__img");
   return img;
 };
+
+//Create Google Maps
+
+if (window.location.pathname == "/contact") {
+  createMap(46.9668722, 18.9172693, "#map", 15);
+  createMap(46.9596846, 18.9439502, "#map_two", 15);
+}
+
+function createMap(lat, long, selector, zoom) {
+  let positionOnMap = { lat: lat, lng: long };
+
+  let map = new google.maps.Map(document.querySelector(selector), {
+    zoom,
+    center: positionOnMap,
+  });
+
+  let marker = new google.maps.Marker({ position: positionOnMap, map: map });
+}

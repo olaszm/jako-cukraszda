@@ -824,6 +824,111 @@ footer {
   }
 }
 
+.section__content__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section__content__contact .section__content__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 2rem 0;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .section__content__contact .section__content__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.section__content__contact .section__content__row .section__content__map {
+  height: 450px;
+  width: 600px;
+  border: 1px solid black;
+  margin-right: 3rem;
+}
+
+@media (max-width: 768px) {
+  .section__content__contact .section__content__row .section__content__map {
+    height: 350px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__content__contact .section__content__row .section__content__map {
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.section__content__contact .section__content__row .section__content__text {
+  width: 300px;
+}
+
+.section__content__contact .section__content__row .section__content__text .text__container {
+  margin: 1rem 0;
+}
+
+.section__content__contact .section__content__row .section__content__text .text__container:first-child {
+  margin: 0;
+}
+
+.section__content__contact .section__content__row .section__content__text .text__container h3 {
+  font-family: "Allura", sans-serif;
+  font-size: 2rem;
+  color: #8f5f7a;
+}
+
+.section__content__contact .section__content__row .section__content__text .text__container p {
+  margin: 0;
+}
+
+.section__content__contact .section__content__row .section__content__text .text__container ul {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.section__content__contact .section__content__row .section__content__text .text__container li {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+#map_two {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
