@@ -23,6 +23,9 @@ body {
 .wrapper {
   width: 65%;
   margin: 0 auto;
+  @media (max-width: $tablet) {
+    width: 80%;
+  }
   @media (max-width: $mobile) {
     width: 90%;
   }

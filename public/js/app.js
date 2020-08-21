@@ -19,9 +19,10 @@ window.addEventListener("click", (e) => {
 
 window.addEventListener("DOMContentLoaded", async () => {
   const { pathname } = window.location;
-  console.log(pathname);
+  let regex = /\/[a-z]+/gi;
+  const query = pathname.match(regex)[1];
   if (pathname.includes("gallery")) {
-    const res = await fetch("/api/weddingCakes");
+    const res = await fetch(`/api${query}`);
     const data = await res.json();
 
     let rowItems = [];
@@ -65,8 +66,13 @@ const createGalleryCardTitle = (name) => {
 };
 
 const createGalleryCardTags = (tags) => {
-  let tag = tags.join(" ");
-  return tag;
+  const pEl = document.createElement("p");
+  tags.forEach((tag) => {
+    const span = document.createElement("span");
+    span.textContent = tag;
+    pEl.append(span);
+  });
+  return pEl;
 };
 
 const createGallertContentEl = () => {
