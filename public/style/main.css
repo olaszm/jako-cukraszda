@@ -256,14 +256,14 @@ fieldset {
 }
 
 .hero .hero__img {
-  height: 100%;
+  height: calc(100vh - 80px);
   width: 100%;
   position: relative;
 }
 
 .hero .hero__img img {
   width: 100%;
-  height: 650px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -679,8 +679,7 @@ footer {
 }
 
 .section .section__inner .section__content .section__content__img {
-  max-width: 600px;
-  min-width: 300px;
+  width: 100%;
   margin-right: 3rem;
 }
 
@@ -689,10 +688,13 @@ footer {
   width: 100%;
 }
 
+.section .section__inner .section__content .section__content__text {
+  max-width: 450px;
+}
+
 .section .section__inner .section__content .section__content__text p {
   margin: 2rem 0;
-  max-width: 500px;
-  min-width: 255px;
+  width: 100%;
 }
 
 .section .section__inner .section__content .section__content__text p:first-child {
@@ -709,8 +711,10 @@ footer {
   }
   .section .section__inner .section__content .section__content__img {
     min-width: 300px;
-    margin: auto;
     margin-bottom: 2.5rem;
+  }
+  .section .section__inner .section__content .section__content__text p {
+    width: 100%;
   }
 }
 

@@ -20,8 +20,8 @@ window.addEventListener("click", (e) => {
 window.addEventListener("DOMContentLoaded", async () => {
   const { pathname } = window.location;
   let regex = /\/[a-z]+/gi;
-  const query = pathname.match(regex)[1];
   if (pathname.includes("gallery")) {
+    const query = pathname.match(regex)[1];
     const res = await fetch(`/api${query}`);
     const data = await res.json();
 
@@ -112,3 +112,22 @@ function createMap(lat, long, selector, zoom) {
 
   let marker = new google.maps.Marker({ position: positionOnMap, map: map });
 }
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline();
+
+tl.from([".hero__content__title", ".hero__content__cta"], {
+  opacity: 0,
+  x: 100,
+  duration: 0.6,
+
+  stagger: 0.4,
+});
+
+tl.from([".section__content__img", ".section__content__text"], {
+  opacity: 0,
+  x: 100,
+  duration: 0.6,
+  stagger: 0.2,
+});
