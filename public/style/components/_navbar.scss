@@ -35,7 +35,9 @@ nav {
     a {
       color: currentColor;
       text-decoration: none;
+      text-transform: uppercase;
     }
+
     &:hover::after {
       content: "";
       transform: translateX(0%);
@@ -120,4 +122,16 @@ nav {
   scroll-behavior: none;
   height: 300px;
   pointer-events: all;
+}
+
+.selected {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: $primary !important;
+  }
 }

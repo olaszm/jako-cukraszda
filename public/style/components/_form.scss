@@ -4,7 +4,8 @@
     height: 100%;
     width: 100%;
     input,
-    textarea {
+    textarea,
+    select {
       border: none;
       background-color: $light-grey;
       padding-left: 0.2em;
@@ -13,7 +14,11 @@
       line-height: 1.1;
       border: 1px solid transparent;
       box-sizing: border-box;
-      &:focus {
+      &:focus,
+      &:active {
+        border: hidden;
+        border-radius: none;
+        outline: none;
         border: 1px solid $primary;
       }
     }

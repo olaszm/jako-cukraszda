@@ -36,6 +36,7 @@
         margin: 1rem 1rem 1rem 0rem;
         position: relative;
         width: 100%;
+        max-height: 400px;
         height: auto;
         transition: all 350ms ease-in;
         overflow: hidden;
@@ -45,9 +46,9 @@
         }
         .product__card__img {
           img {
-            height: 100%;
+            height: 400px;
             width: 100%;
-            object-fit: contain;
+            object-fit: cover;
             transition: all 350ms ease;
           }
         }

@@ -2,6 +2,17 @@ const dropDownEl = document.querySelector(".dropdown");
 const hamburgerElement = document.querySelector(".hambi");
 const sectionEL = document.querySelector(".gallery");
 const sectionTitle = document.querySelector(".section__title > h1");
+const gridItems = [...document.querySelectorAll(".grid-item")];
+const navItems = [...document.querySelectorAll("[data-route]")];
+
+window.addEventListener("DOMContentLoaded", () => {
+  const { pathname } = window.location;
+  console.log(pathname);
+  const route = navItems.filter((item) => item.dataset.route == pathname);
+  route.forEach((r) => {
+    r.classList.add("selected");
+  });
+});
 
 // DROPDOWN ------------------------------
 let isMenuOpen = false;
@@ -16,6 +27,16 @@ window.addEventListener("click", (e) => {
     console.log(isMenuOpen);
   }
 });
+
+// Grid Images
+
+// gridItems.forEach((item) => {
+//   item.addEventListener("mouseenter", (e) => {
+//     e.target.style.zIndex += 1;
+//   });
+// });
+
+// Gallery
 
 window.addEventListener("DOMContentLoaded", async () => {
   const { pathname } = window.location;
@@ -121,13 +142,24 @@ tl.from([".hero__content__title", ".hero__content__cta"], {
   opacity: 0,
   x: 100,
   duration: 0.6,
-
   stagger: 0.4,
 });
 
-tl.from([".section__content__img", ".section__content__text"], {
+gsap.from([".grid-item"], {
   opacity: 0,
-  x: 100,
+  duration: 0.7,
+  stagger: 0.4,
+});
+
+gsap.from(".services__card", {
+  scrollTrigger: {
+    trigger: ".services__card__container",
+    start: "top 80%",
+    end: "bottom bottom",
+    // markers: true,
+  },
+  opacity: 0,
+  y: "100%",
   duration: 0.6,
-  stagger: 0.2,
+  stagger: 0.4,
 });

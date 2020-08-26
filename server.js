@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 const PORT = 3000;
 const galleryRoutes = [
   { name: "weddingCakes" },
-  { name: "bday-cake" },
-  { name: "events" },
+  { name: "bdayCakes" },
+  { name: "sutemenyek" },
   { name: "cakes" },
 ];
 
