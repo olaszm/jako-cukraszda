@@ -4,6 +4,7 @@ const sectionEL = document.querySelector(".gallery");
 const sectionTitle = document.querySelector(".section__title > h1");
 const gridItems = [...document.querySelectorAll(".grid-item")];
 const navItems = [...document.querySelectorAll("[data-route]")];
+const productCards = document.querySelectorAll(".product__card");
 
 window.addEventListener("DOMContentLoaded", () => {
   const { pathname } = window.location;
@@ -137,19 +138,21 @@ function createMap(lat, long, selector, zoom) {
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
+const tlAbout = gsap.timeline();
 
-tl.from([".hero__content__title", ".hero__content__cta"], {
-  opacity: 0,
-  x: 100,
-  duration: 0.6,
-  stagger: 0.4,
-});
-
-gsap.from([".grid-item"], {
-  opacity: 0,
-  duration: 0.7,
-  stagger: 0.4,
-});
+tlAbout
+  .from([".grid-item"], {
+    opacity: 0,
+    height: 0,
+    duration: 0.7,
+    ease: "ease",
+    stagger: 0.4,
+  })
+  .from(".section__content__text", {
+    opacity: 0,
+    duration: 0.4,
+    ease: "ease",
+  });
 
 gsap.from(".services__card", {
   scrollTrigger: {
@@ -163,3 +166,40 @@ gsap.from(".services__card", {
   duration: 0.6,
   stagger: 0.4,
 });
+
+gsap.from(".section__content__map", {
+  opacity: 0,
+  duration: 0.6,
+  ease: "ease-out",
+  stagger: 0.4,
+});
+
+tl.from([".overlay", ".hero"], {
+  x: -100,
+  duration: 1.2,
+  width: -0,
+  skewX: 4,
+  ease: "power3.inOut",
+  stagger: {
+    amount: 0.2,
+  },
+}).from([".hero__content__title", ".hero__content__cta"], {
+  opacity: 0,
+  y: 100,
+  duration: 0.6,
+  stagger: 0.4,
+});
+
+gsap.from(productCards, {
+  delay: "-0.4",
+  y: -60,
+  skewX: 6,
+  duration: 0.8,
+  opacity: 0,
+  ease: "power3.out",
+  stagger: {
+    amount: 0.2,
+  },
+});
+
+console.log(productCards);
