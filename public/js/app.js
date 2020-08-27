@@ -4,7 +4,8 @@ const sectionEL = document.querySelector(".gallery");
 const sectionTitle = document.querySelector(".section__title > h1");
 const gridItems = [...document.querySelectorAll(".grid-item")];
 const navItems = [...document.querySelectorAll("[data-route]")];
-const productCards = document.querySelectorAll(".product__card");
+
+const slideImages = [...document.querySelectorAll(".hero__img > img")];
 
 window.addEventListener("DOMContentLoaded", () => {
   const { pathname } = window.location;
@@ -25,7 +26,6 @@ window.addEventListener("click", (e) => {
   ) {
     dropDownEl.classList.toggle("dropdown-active");
     isMenuOpen = !isMenuOpen;
-    console.log(isMenuOpen);
   }
 });
 
@@ -189,17 +189,3 @@ tl.from([".overlay", ".hero"], {
   duration: 0.6,
   stagger: 0.4,
 });
-
-gsap.from(productCards, {
-  delay: "-0.4",
-  y: -60,
-  skewX: 6,
-  duration: 0.8,
-  opacity: 0,
-  ease: "power3.out",
-  stagger: {
-    amount: 0.2,
-  },
-});
-
-console.log(productCards);

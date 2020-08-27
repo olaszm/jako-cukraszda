@@ -99,8 +99,8 @@ nav {
   opacity: 0;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 .dropdown .dropdown__inner {
@@ -273,10 +273,17 @@ fieldset {
 }
 
 .hero .hero__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .hero .hero__img::after {
@@ -777,8 +784,12 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section .section__inner .section__content .section__content__img {
+    margin: 0;
     margin-bottom: 2.5rem;
   }
   .section .section__inner .section__content .section__content__text p {
