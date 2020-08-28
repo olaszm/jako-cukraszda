@@ -140,38 +140,44 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline();
 const tlAbout = gsap.timeline();
 
-tlAbout
-  .from(".section__title", {
-    opacity: 0,
-    x: -100,
-    duration: 0.4,
-    ease: "ease",
-  })
-  .from([".grid-item"], {
-    opacity: 0,
-    height: 0,
-    duration: 0.7,
-    ease: "ease",
-    stagger: 0.4,
-  })
-  .from(aboutTextEl, {
-    opacity: 0,
-    duration: 0.4,
-    ease: "ease",
-  });
+if (aboutTextEl) {
+  tlAbout
+    .from(".section__title", {
+      opacity: 0,
+      x: -100,
+      duration: 0.4,
+      ease: "ease",
+    })
+    .from([".grid-item"], {
+      opacity: 0,
+      height: 0,
+      duration: 0.7,
+      ease: "ease",
+      stagger: 0.4,
+    })
+    .from(aboutTextEl, {
+      opacity: 0,
+      duration: 0.4,
+      ease: "ease",
+    });
+}
 
-gsap.from(".services__card", {
-  scrollTrigger: {
-    trigger: ".services__card__container",
-    start: "top 80%",
-    end: "bottom bottom",
-    // markers: true,
-  },
-  opacity: 0,
-  y: "100%",
-  duration: 0.6,
-  stagger: 0.4,
-});
+const servicesCard = [...document.querySelectorAll(".services__card")];
+
+if (servicesCard) {
+  gsap.from(servicesCard, {
+    scrollTrigger: {
+      trigger: ".services__card__container",
+      start: "top 80%",
+      end: "bottom bottom",
+      // markers: true,
+    },
+    opacity: 0,
+    y: "100%",
+    duration: 0.6,
+    stagger: 0.4,
+  });
+}
 
 gsap.from(".section__content__map", {
   opacity: 0,
@@ -180,29 +186,32 @@ gsap.from(".section__content__map", {
   stagger: 0.4,
 });
 
-tl.from([".overlay", ".hero"], {
-  x: -100,
-  duration: 1.2,
-  width: 0,
-  skewX: 2,
-  ease: "power3.inOut",
-  stagger: {
-    amount: 0.2,
-  },
-})
-  .from([".hero__content__title", ".hero__content__cta"], {
-    opacity: 0,
-    y: 100,
-    duration: 0.5,
-    stagger: 0.4,
+const heroEl = document.querySelector(".hero");
+const overlayEl = document.querySelector(".overlay");
+
+if (heroEl && overlayEl) {
+  tl.from([overlayEl, heroEl], {
+    x: -100,
+    duration: 1.2,
+    width: 0,
+    skewX: 2,
+    ease: "power3.inOut",
+    stagger: {
+      amount: 0.2,
+    },
   })
-  .then((e) => {
-    const overlay = document.querySelector(".overlay");
-    const hero = document.querySelector(".hero");
-    if (overlay) {
-      overlay.style.width = "100%";
-    }
-    if (hero) {
-      hero.style.width = "100%";
-    }
-  });
+    .from([".hero__content__title", ".hero__content__cta"], {
+      opacity: 0,
+      y: 100,
+      duration: 0.5,
+      stagger: 0.4,
+    })
+    .then((e) => {
+      if (overlayEl) {
+        overlayEl.style.width = "100%";
+      }
+      if (heroEl) {
+        heroEl.style.width = "100%";
+      }
+    });
+}
