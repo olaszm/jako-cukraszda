@@ -11,7 +11,7 @@
 @import "components/variables";
 @import "components/gallery";
 
-@import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
 html,
@@ -45,7 +45,7 @@ body {
   place-items: center;
   text-align: center;
   h1 {
-    font-family: "Allura", sans-serif;
+    font-family: "Parisienne", sans-serif;
     font-size: 10rem;
     color: $primary;
     margin: 0;

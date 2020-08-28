@@ -2,6 +2,7 @@ const dropDownEl = document.querySelector(".dropdown");
 const hamburgerElement = document.querySelector(".hambi");
 const sectionEL = document.querySelector(".gallery");
 const sectionTitle = document.querySelector(".section__title > h1");
+const aboutTextEl = document.querySelector(".about__text");
 const gridItems = [...document.querySelectorAll(".grid-item")];
 const navItems = [...document.querySelectorAll("[data-route]")];
 
@@ -9,7 +10,6 @@ const slideImages = [...document.querySelectorAll(".hero__img > img")];
 
 window.addEventListener("DOMContentLoaded", () => {
   const { pathname } = window.location;
-  console.log(pathname);
   const route = navItems.filter((item) => item.dataset.route == pathname);
   route.forEach((r) => {
     r.classList.add("selected");
@@ -141,6 +141,12 @@ const tl = gsap.timeline();
 const tlAbout = gsap.timeline();
 
 tlAbout
+  .from(".section__title", {
+    opacity: 0,
+    x: -100,
+    duration: 0.4,
+    ease: "ease",
+  })
   .from([".grid-item"], {
     opacity: 0,
     height: 0,
@@ -148,7 +154,7 @@ tlAbout
     ease: "ease",
     stagger: 0.4,
   })
-  .from(".section__content__text", {
+  .from(aboutTextEl, {
     opacity: 0,
     duration: 0.4,
     ease: "ease",
@@ -177,15 +183,26 @@ gsap.from(".section__content__map", {
 tl.from([".overlay", ".hero"], {
   x: -100,
   duration: 1.2,
-  width: -0,
-  skewX: 4,
+  width: 0,
+  skewX: 2,
   ease: "power3.inOut",
   stagger: {
     amount: 0.2,
   },
-}).from([".hero__content__title", ".hero__content__cta"], {
-  opacity: 0,
-  y: 100,
-  duration: 0.6,
-  stagger: 0.4,
-});
+})
+  .from([".hero__content__title", ".hero__content__cta"], {
+    opacity: 0,
+    y: 100,
+    duration: 0.5,
+    stagger: 0.4,
+  })
+  .then((e) => {
+    const overlay = document.querySelector(".overlay");
+    const hero = document.querySelector(".hero");
+    if (overlay) {
+      overlay.style.width = "100%";
+    }
+    if (hero) {
+      hero.style.width = "100%";
+    }
+  });

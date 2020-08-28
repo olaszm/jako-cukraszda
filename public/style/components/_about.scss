@@ -14,7 +14,7 @@
         }
       }
       width: fit-content;
-      font-family: "Allura", sans-serif;
+      font-family: "Parisienne", sans-serif;
       color: $primary;
       font-size: 1.8rem;
       position: relative;
@@ -65,9 +65,10 @@
       }
 
       @media (max-width: $desktop) {
-        margin: 3rem 0;
+        margin: 3rem auto;
+        width: 99%;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         .section__content__img {
           margin: 0;
           margin-bottom: 2.5rem;

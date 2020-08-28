@@ -1,130 +1,130 @@
 {
   "weddingCakes": [
     {
-      "name": "Fank",
+      "name": "",
       "src": "https://images.unsplash.com/photo-1530019163123-f33edadb3833?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["malna", "eper", "barack"]
+      "flavours": []
     },
     {
-      "name": "IzeBize",
+      "name": "",
       "src": "https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["mint", "lime", "lorem"]
+      "flavours": []
     },
     {
-      "name": "LoremIpsum",
+      "name": "",
       "src": "https://images.unsplash.com/photo-1573050646191-6b8a69b506f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["loremMemem", "ipsumpusom", "IpsLorem"]
+      "flavours": []
     },
     {
-      "name": "Huhehuehue",
+      "name": "",
       "src": "https://images.unsplash.com/photo-1592343516127-aa13cbdc5172?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "flavours": []
     },
     {
-      "name": "Huhehuehue",
+      "name": "",
       "src": "https://images.unsplash.com/photo-1521624738948-5250b8a7c220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "flavours": []
     },
     {
-      "name": "Huhehuehue",
+      "name": "",
       "src": "https://images.unsplash.com/photo-1556973959-bde9642a2c6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "flavours": []
+    }
+  ],
+  "specialCakes": [
+    {
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1557979619-445218f326b9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "flavours": []
+    },
+    {
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1591519060886-27dd11ad7f5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80",
+      "flavours": []
+    },
+    {
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1561685247-378f3178a7e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
+    },
+    {
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1573127275465-722f36cc4d44?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "flavours": []
+    },
+    {
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1581112105345-a06ad5976509?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+      "flavours": []
+    },
+    {
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1572542150708-9ff7fb0e1514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80",
+      "flavours": []
     }
   ],
   "cakes": [
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1530019163123-f33edadb3833?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["malna", "eper", "barack"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["mint", "lime", "lorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1476887334197-56adbf254e1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1573050646191-6b8a69b506f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["loremMemem", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1515164664657-6ba669e028f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=641&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1592343516127-aa13cbdc5172?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1469533778471-92a68acc3633?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1521624738948-5250b8a7c220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1474045326708-cdc78c2487cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1556973959-bde9642a2c6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
-    }
-  ],
-  "sutemenyek": [
-    {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1530019163123-f33edadb3833?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["malna", "eper", "barack"]
-    },
-    {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["mint", "lime", "lorem"]
-    },
-    {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1573050646191-6b8a69b506f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["loremMemem", "ipsumpusom", "IpsLorem"]
-    },
-    {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1592343516127-aa13cbdc5172?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
-    },
-    {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1521624738948-5250b8a7c220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
-    },
-    {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1556973959-bde9642a2c6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1565320095022-b810fe4b51ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
     }
   ],
   "bdayCakes": [
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1530019163123-f33edadb3833?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["malna", "eper", "barack"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["mint", "lime", "lorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1590174709246-f95754d54cc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1573050646191-6b8a69b506f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["loremMemem", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1564980142343-805986d9cef1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1592343516127-aa13cbdc5172?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1538746473422-0ec6ca5f4956?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1521624738948-5250b8a7c220?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1551879403-6adb554966fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
     },
     {
-      "name": "Cakes",
-      "src": "https://images.unsplash.com/photo-1556973959-bde9642a2c6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
-      "flavours": ["hehiehei", "ipsumpusom", "IpsLorem"]
+      "name": "",
+      "src": "https://images.unsplash.com/photo-1595261072825-e41bf12ea0b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "flavours": []
     }
   ]
 }

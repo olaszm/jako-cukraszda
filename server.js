@@ -16,7 +16,7 @@ const PORT = 3000;
 const galleryRoutes = [
   { name: "weddingCakes" },
   { name: "bdayCakes" },
-  { name: "sutemenyek" },
+  { name: "specialCakes" },
   { name: "cakes" },
 ];
 

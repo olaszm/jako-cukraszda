@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 header {
   height: 100%;
@@ -319,7 +319,7 @@ fieldset {
 }
 
 .hero .hero__content .hero__content__title h2 {
-  font-family: "Allura", sans-serif;
+  font-family: "Parisienne", sans-serif;
   font-size: 4.5rem;
 }
 
@@ -352,7 +352,7 @@ fieldset {
   text-align: center;
   font-size: 3.25rem;
   color: #c3b498;
-  font-family: "Allura", sans-serif;
+  font-family: "Parisienne", sans-serif;
 }
 
 .services .services__inner .services__card__container {
@@ -575,12 +575,12 @@ footer {
   }
 }
 
-.product {
+.section {
   height: 100%;
 }
 
-.product .product__inner .product__title {
-  font-family: "Allura", sans-serif;
+.section .section__inner .section__title {
+  font-family: "Parisienne", sans-serif;
   color: #8f5f7a;
   font-size: 1.8rem;
   position: relative;
@@ -589,7 +589,7 @@ footer {
   margin-top: 3rem;
 }
 
-.product .product__inner .product__title::after {
+.section .section__inner .section__title::after {
   content: "";
   position: absolute;
   bottom: 20px;
@@ -599,12 +599,12 @@ footer {
   background-color: #8f5f7a;
 }
 
-.product .product__content {
+.section .product__content {
   margin: 5rem 0;
   min-height: 100%;
 }
 
-.product .product__content .product__card__container {
+.section .product__content .product__card__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,7 +619,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .product .product__content .product__card__container {
+  .section .product__content .product__card__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -630,7 +630,7 @@ footer {
   }
 }
 
-.product .product__content .product__card__container .product__card {
+.section .product__content .product__card__container .product__card {
   margin: 1rem 1rem 1rem 0rem;
   position: relative;
   width: 100%;
@@ -643,12 +643,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .product .product__content .product__card__container .product__card {
+  .section .product__content .product__card__container .product__card {
     margin: 1rem 0;
   }
 }
 
-.product .product__content .product__card__container .product__card .product__card__img img {
+.section .product__content .product__card__container .product__card .product__card__img img {
   height: 400px;
   width: 100%;
   -o-object-fit: cover;
@@ -657,7 +657,7 @@ footer {
   transition: all 350ms ease;
 }
 
-.product .product__content .product__card__container .product__card .product__overlay {
+.section .product__content .product__card__container .product__card .product__overlay {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -672,7 +672,7 @@ footer {
   height: 40px;
 }
 
-.product .product__content .product__card__container .product__card:hover img {
+.section .product__content .product__card__container .product__card:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -685,7 +685,7 @@ footer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: "Allura", sans-serif;
+  font-family: "Parisienne", sans-serif;
   color: #8f5f7a;
   font-size: 1.8rem;
   position: relative;
@@ -779,14 +779,15 @@ footer {
 
 @media (max-width: 1152px) {
   .section .section__inner .section__content {
-    margin: 3rem 0;
+    margin: 3rem auto;
+    width: 99%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .section .section__inner .section__content .section__content__img {
     margin: 0;
@@ -993,7 +994,7 @@ footer {
 }
 
 .section__content__contact .section__content__row .section__content__text .text__container h3 {
-  font-family: "Allura", sans-serif;
+  font-family: "Parisienne", sans-serif;
   font-size: 2rem;
   color: #8f5f7a;
 }
@@ -1098,6 +1099,13 @@ footer {
   height: 2px;
 }
 
+@media (max-width: 768px) {
+  .gallery .gallery__card__row .gallery__card {
+    height: 150;
+    width: 250px;
+  }
+}
+
 @media (max-width: 480px) {
   .gallery .gallery__card__row {
     -webkit-box-orient: vertical;
@@ -1155,7 +1163,7 @@ body {
 }
 
 .error h1 {
-  font-family: "Allura", sans-serif;
+  font-family: "Parisienne", sans-serif;
   font-size: 10rem;
   color: #8f5f7a;
   margin: 0;
